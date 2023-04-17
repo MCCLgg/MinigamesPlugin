@@ -1,0 +1,8 @@
+name: Podlands
+version: '${project.version}'
+main: com.podcrash.podlands.Main
+api-version: 1.19
+commands:
+  gm:
+    description: starts game
+    usage: /gm
