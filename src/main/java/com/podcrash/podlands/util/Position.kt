@@ -45,7 +45,6 @@ fun fillAreaTile(loc1: Location, loc2: Location, size: Int, materials: List<Mate
     for (x in minX..maxX step 5) {
         for (y in minY..maxY) {
             for (z in minZ..maxZ step 5) {
-                loc1.world.players.forEach { it.sendMessage("filling ${materials[mIdx]} at $x, $y, $z") }
                 fillArea(
                     Location(loc1.world, x.toDouble(), y.toDouble(), z.toDouble()), Location(loc1.world,
                         (x + size - 1).toDouble(), y.toDouble(), (z + size - 1).toDouble()

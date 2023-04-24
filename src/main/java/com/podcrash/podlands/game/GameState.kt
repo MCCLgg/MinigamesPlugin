@@ -1,5 +1,27 @@
 package com.podcrash.podlands.game
 
-// TODO: make this better
+sealed class GameState {
+    abstract fun onEnter()
+    abstract fun onLeave()
 
-enum class GameState { WAITING, STARTING, ACTIVE, ENDING }
+    object Lobby: GameState() {
+        override fun onEnter() {
+
+        }
+
+        override fun onLeave() {
+
+        }
+    }
+
+    object Game: GameState() {
+        override fun onEnter() {
+
+        }
+
+        override fun onLeave() {
+
+        }
+    }
+}
+
